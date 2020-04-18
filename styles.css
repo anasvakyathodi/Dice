@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-height: 100vh;
+  max-width: 100vw;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  display: flex;
+}
+.img-container {
+  background-color: white;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  background-color: lightgray;
+  width: 200px;
+  display: flex;
+  border-radius: 25px;
+}
