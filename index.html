@@ -13,10 +13,14 @@
     </header>
     <section class="main">
       <div class="img-container">
-        <img src="./img/1.png" alt="" />
+        <audio id="sound_play" controls="none" preload="auto" style="display:none">
+          <source src="dice_roll_sound.mp3" type="audio/mp3">
+          </audio>
+        <img src="./img/1.png" alt="" onclick="play();"  id="sound"/>
       </div>
     </section>
     <script src="./js/jquery.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/script.js"> </script>
   </body>
 </html>
