@@ -1,5 +1,5 @@
 # Dice App
-Published Site : [Todo](https://anasvakyathodi.me/Dice)
+Published Site : [Dice page](https://anasvakyathodi.me/Dice)
 ###### A Sime HTML Dice Page
 #
 # Features
