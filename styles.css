@@ -32,10 +32,32 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 img {
   background-color: lightgray;
   width: 200px;
   display: flex;
   border-radius: 25px;
+}
+
+button {
+  margin: 50px;
+  border-radius: 5px;
+  padding: 8px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif ;
+  border: 1px solid black;
+
+}
+
+button:hover {
+  background-color: lightgray;
+  cursor: pointer;
+
+}
+
+.dark-mode {
+  background-color: rgb(12, 1, 170);
+    color: white;
+
 }
