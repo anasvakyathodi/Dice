@@ -2,34 +2,52 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <script data-ad-client="ca-pub-1850733742011558" async
-    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-  <link rel="stylesheet" href="styles.css" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
-  <title>Dice App</title>
+    <meta charset="UTF-8" />
+    <script data-ad-client="ca-pub-1850733742011558" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+    <title>Dice App</title>
 
 </head>
 
 <body>
-  <header>
-    <h1>Dice App</h1>
-    <button>Switch to dark/light mode</button>
-  </header>
-  <section class="main">
-    <div class="img-container">
-      <audio id="sound_play" controls="none" preload="auto" style="display:none">
+    <header>
+        <h1>Dice App</h1>
+        <button>Switch to dark/light mode</button>
+    </header>
+    <section class="main">
+        <div id="img-container">
+            <audio id="sound_play" controls="none" preload="auto" style="display:none">
         <source src="dice_roll_sound.mp3" type="audio/mp3">
       </audio>
-      <img src="./img/1.png" alt="" onclick="play();" id="sound" />
-    </div>
-  </section>
-  <script src="./js/jquery.min.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/script.js"> </script>
-  <script src="./js/color_scheme.js"></script>
+
+            <div class="front">
+                <img src="./img/1.png" alt="" onclick="play();" id="sound" />
+            </div>
+            <div class="back">
+                <img src="./img/2.png" alt="" onclick="play();" id="sound" />
+            </div>
+            <div class="right">
+                <img src="./img/3.png" alt="" onclick="play();" id="sound" />
+            </div>
+            <div class="left">
+                <img src="./img/4.png" alt="" onclick="play();" id="sound" />
+            </div>
+            <div class="top">
+                <img src="./img/5.png" alt="" onclick="play();" id="sound" />
+            </div>
+            <div class="bottom">
+                <img src="./img/6.png" alt="" onclick="play();" id="sound" />
+            </div>
+        </div>
+    </section>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/script.js">
+    </script>
+    <script src="./js/color_scheme.js"></script>
 </body>
 
 </html>
