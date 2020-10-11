@@ -1,63 +1,107 @@
 * {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  max-height: 100vh;
-  max-width: 100vw;
+    max-height: 100vh;
+    max-width: 100vw;
 }
 
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  margin: 0;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  font-size: 1rem;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    margin: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h1 {
-  display: flex;
+    display: flex;
 }
-.img-container {
-  background-color: white;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
+.main {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: 0 auto 40px;
+    perspective: 1000px;
+    perspective-origin: 50% 100%;
 }
+
+#img-container {
+    height: 100%;
+    width: 100%;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 6s;
+    border-radius: 25px;
+}
+
+#img-container div {
+    display: block;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
 img {
-  background-color: lightgray;
-  width: 200px;
-  display: flex;
-  border-radius: 25px;
+    background-color: lightgray;
+    width: 200px;
+    display: flex;
+    border-radius: 25px;
+}
+
+#img-container .front {
+    transform: translateZ(100px);
+}
+
+#img-container .back {
+    transform: rotateX(-180deg) translateZ(100px);
+}
+
+#img-container .left {
+    transform: rotateY(-90deg)translateZ(100px);
+}
+
+#img-container .right {
+    transform: rotateY(90deg)translateZ(100px);
+}
+
+#img-container .top {
+    transform: rotateX(90deg)translateZ(100px);
+}
+
+#img-container .bottom {
+    transform: rotateX(-90deg)translateZ(100px);
 }
 
 button {
-  margin: 50px;
-  border-radius: 5px;
-  padding: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif ;
-  border: 1px solid black;
-
+    margin: 50px;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    border: 1px solid black;
 }
 
 button:hover {
-  background-color: lightgray;
-  cursor: pointer;
-
+    background-color: lightgray;
+    cursor: pointer;
 }
 
 .dark-mode {
-  background-color: rgb(12, 1, 170);
+    background-color: rgb(12, 1, 170);
     color: white;
-
 }
