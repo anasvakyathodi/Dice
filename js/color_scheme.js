@@ -1,5 +1,6 @@
 $(document).ready(function() {
-    $("input").click(function() {
+    $("button").click(function() {
+
         $("body").toggleClass("dark-mode")
     })
 })
