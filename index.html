@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <script data-ad-client="ca-pub-1850733742011558" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="switch.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
@@ -17,18 +15,13 @@
 <body>
     <header>
         <h1>Dice App</h1>
-        <label class="button">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
+        <button>Switch to dark/light mode</button>
     </header>
     <section class="main">
         <div id="img-container">
             <audio id="sound_play" controls="none" preload="auto" style="display:none">
-                <source src="dice_roll_sound.mp3" type="audio/mp3">
-            </audio>
+        <source src="dice_roll_sound.mp3" type="audio/mp3">
+      </audio>
 
             <div class="front">
                 <img src="./img/1.png" alt="" onclick="play();" id="sound" />
