@@ -4,6 +4,7 @@
 }
 
 body {
+    margin: 10px;
     max-height: 100vh;
     max-width: 100vw;
 }
@@ -21,6 +22,7 @@ header {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     text-transform: uppercase;
     text-align: center;
+    border: 2px solid white;
 }
 
 h1 {
@@ -101,7 +103,36 @@ button:hover {
     cursor: pointer;
 }
 
-.dark-mode {
-    background-color: rgb(12, 1, 170);
+#roll {
+    display: flex;
+    margin-top: 100px;
+}
+
+/* For a better look in mobile  */
+@media only screen and (max-width: 600px) {
+    #roll {
+        display: flex;
+        margin-top: 50px;
+    }
+}
+/* Dark mode applied here */
+.dark-mode-1 {
+    background-color: rgb(64, 62, 88);
+    color: white;
+}
+
+.dark-mode-2 {
+    background-color: rgb(161, 6, 65);
+    color: white;
+    border: 2px solid white;
+}
+
+.dark-mode-2:hover {
+    background-color: rgb(153, 57, 57);
+    cursor: pointer;
+}
+
+.dark-mode-3 {
+    background-color: rgb(37, 184, 123);
     color: white;
 }
